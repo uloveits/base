@@ -70,10 +70,10 @@ export default class Tips {
     });
   }
 
-  static toast (title, onHide, icon = 'success', duration = 500) {
+  static toast (title, onHide, duration = 500) {
     Taro.showToast({
       title: title,
-      icon: icon,
+      icon: 'none',
       mask: true,
       duration: duration
     });
@@ -124,7 +124,7 @@ export default class Tips {
   /**
    * 弹出加载提示
    */
-  static loading (title = '加载中') {
+  static loading (title = '') {
     if (this.isLoading) {
       return;
     }

@@ -24,6 +24,38 @@ class App extends Taro.Component {
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
+    },
+    tabBar: {
+      color: '#2c2c2c',
+      selectedColor: '#c18346',
+      borderStyle: 'white',
+      backgroundColor: '#fff',
+      list: [
+        {
+          pagePath: 'pages/index/index',
+          iconPath: 'public/imgs/tab/home.png',
+          selectedIconPath: 'public/imgs/tab/home-active.png',
+          text: '首页'
+        },
+        {
+          pagePath: 'pages/index/index',
+          iconPath: 'public/imgs/tab/type.png',
+          selectedIconPath: 'public/imgs/tab/type-active.png',
+          text: '服务'
+        },
+        {
+          pagePath: 'pages/index/index',
+          iconPath: 'public/imgs/tab/shop.png',
+          selectedIconPath: 'public/imgs/tab/shop-active.png',
+          text: '消息'
+        },
+        {
+          pagePath: 'pages/index/index',
+          iconPath: 'public/imgs/tab/user.png',
+          selectedIconPath: 'public/imgs/tab/user-active.png',
+          text: '我的'
+        }
+      ]
     }
   }
 

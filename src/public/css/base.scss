@@ -6,21 +6,26 @@
 
 /*字体颜色*/
 .white{color:#FFF}
+.black{color: $color-black}
 .muted{color: $color-muted}
 .weak{color: $color-weak}
 .primary{color: $color-primary}
 .major{color: $color-major}
 .danger{color: $color-danger}
 .brand{color: $color-brand}
+.blue{color: $color-blue}
+.orange{color:$color-orange}
 
 /*背景颜色*/
 .bgWhite{background: $color-white}
+.bgBlack{background: $color-black}
 .bgPrimary{background: $color-primary}
 .bgPrimary-darken {background: $color-primary-darken}
 .bgGrey{background: $color-grey}
 .bgGrey-darken{background: $color-grey-darken}
 .bgBrand{background: $color-brand}
 .bgMajor{background: $color-major}
+.bgEC{background: $color-ec}
 
 .bg-gradual-orange {
   background-image:linear-gradient(45deg, #ff9700, #ed1c24);
@@ -43,10 +48,15 @@
   color:#fff;
 }
 
+.bg-gradual-black {
+  background-image:linear-gradient(0deg, #0c0403, #391303);
+  color:#fff;
+}
 
-
-
-
+.bg-gradual-yellow {
+  background-image:linear-gradient(0deg, #ffe88e, #ffffff);
+  color:#fff;
+}
 
 /*字体大小*/
 .xl{font-size: $text-xl}
@@ -78,9 +88,6 @@
 .pb20 {padding-bottom: 20px}
 
 
-
-
-
 /*margin*/
 .mt10 {margin-top: 10px}
 .mt20 {margin-top: 20px}
@@ -105,17 +112,9 @@
 .fixed {position: fixed}
 
 /*按钮没有样式*/
-.noCssBtn {border:none!important;background:#ffffff;color:#000;padding:0;line-height:34px;}
+.noCssBtn {border:none!important;background:transparent;padding:0;}
+button:after{display: none}
 
-/*分享按钮*/
-.shareBtn {
-  padding: 0 !important;
-  margin: 0 !important;
-  height: 50px !important;
-  line-height:36px !important;
-  border: 0 !important;
-  background: transparent !important;
-}
 /*标题左边竖条*/
 .title-border-left{border-left: 10px solid $color-primary;}
 /*按钮圆形背景*/
@@ -124,11 +123,15 @@
 .limitWidth{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;}
 /*卡片样式*/
 .card {border-radius: 15px}
+.card-max {border-radius: 40px}
+
+.middle {vertical-align: middle}
 
 /*input样式覆盖*/
 .at-input {
   margin: 0px;
-  padding: 15px 0px;
+  padding: 0px;
+  position: static;
 }
 .at-input__title {
   font-size: $text-lg;
@@ -153,5 +156,18 @@ video {
   box-shadow:0px 40px 100px 0px rgba(0, 0, 0, 0.07);
 }
 
+.avatar-small {
+  width: 64px;
+  border-radius: 50%;
+}
 
+.avatar-normal {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.at-search-bar__input {
+  padding: 3Px 37Px;
+}
 

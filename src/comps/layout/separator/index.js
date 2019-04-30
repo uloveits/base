@@ -8,8 +8,8 @@ class KtSeparator extends Taro.Component {
     const { comp } = this.props;
 
     const defaultProps = {
-      height: '5px',
-      backgroundColor: '#F5F5F5'
+      height: '10px',
+      backgroundColor: '#ECECEC'
     }
     function use(target, prop, val) {
       if (target && target[prop]) {
